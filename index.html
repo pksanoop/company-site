@@ -355,6 +355,22 @@
       object-fit: contain;          /* fit entire image (no cropping) */
       display: block;
     }
+    /* --- Technology image sizing (fix oversized image) --- */
+    .tech-image-wrap{
+      margin-top: 18px;
+      max-width: 720px;      /* make it the same “content width” as the other cards */
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+.tech-image{
+  width: 100%;
+  height: auto;
+  max-height: 420px;     /* prevents it from looking huge */
+  object-fit: contain;   /* no stretching/cropping */
+  display: block;
+  border-radius: var(--radius);
+}
 
     /* Contact */
     .contact{
