@@ -340,6 +340,21 @@
     }
     
     .diagram svg{ width: 100%; max-width: 560px; height:auto; opacity:0.95; }
+    /* --- How it works image (prevents oversize/stretch) --- */
+    .diagram.diagram-image{
+      border-style: solid;          /* optional: solid border for real images */
+      padding: 12px;                /* smaller padding looks better with images */
+      min-height: unset;            /* overrides the 210px min-height */
+      overflow: hidden;             /* clips to rounded corners */
+    }
+
+    .howitworks-img{
+      width: 100%;
+      height: auto;                 /* no stretching */
+      max-height: 420px;            /* cap so it doesn't become huge */
+      object-fit: contain;          /* fit entire image (no cropping) */
+      display: block;
+    }
 
     /* Contact */
     .contact{
@@ -518,12 +533,12 @@
 
       <div class="grid2">
         <div class="card">
-          <h3>How it works</h3>
+          <h2>How it works</h2>
           <div class="diagram diagram-image" role="img" aria-label="How it works diagram">
             <img
               class="howitworks-img"
               src="./assets/diagrams/how-it-works.png"
-              alt="How Elektra solid-state sodium battery works"
+              alt="How it works diagram"
               loading="lazy"
             />
           </div>
