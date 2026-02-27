@@ -275,7 +275,22 @@
     .grid3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; }
     .grid2{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 18px; }
     @media (max-width: 980px){ .grid3{ grid-template-columns: 1fr; } .grid2{ grid-template-columns: 1fr; } }
+    /* Team grid + headshots */
+    .team-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 18px; }
+    @media (max-width: 1100px){ .team-grid{ grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 620px){ .team-grid{ grid-template-columns: 1fr; } }
 
+    .team-photo{
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.14);
+      margin-bottom: 12px;
+      background: rgba(255,255,255,0.03);
+    }
+    .team-role{ color: rgba(255,255,255,0.72); font-weight: 750; font-size: 13px; margin-top: -6px; }
+    .team-link{ color: rgba(76,201,240,0.92); font-weight: 700; }
     .card{
       border: 1px solid var(--line);
       background: rgba(255,255,255,0.04);
@@ -611,26 +626,56 @@
         Elektra combines deep electrochemistry, ceramics processing, and commercialization experience — with academic collaboration through AISEL (University of Calgary).
       </p>
 
-      <div class="grid3">
+            <div class="team-grid">
+        <!-- 1) CEO -->
         <div class="card">
-          <h3>Founder & CEO</h3>
+          <img class="team-photo" src="assets/team/CEO.jpg" alt="CEO portrait" loading="lazy" />
+          <h3>Shantel Butler</h3>
+          <div class="team-role">CEO</div>
           <p class="meta">
-            <!-- TODO: Fill name, headshot, bio -->
-            Name • short bio • LinkedIn
+            <!-- TODO: 1–2 line bio for CEO -->
+            Founder Serial Entrepreneur Experienced R&D Executive Applied physicist experienced in battery material science).<br/>
+            <!-- TODO: LinkedIn URL -->
+            <a class="team-link" href="https://www.linkedin.com/in/shantelnbutler/" target="_blank" rel="noopener">LinkedIn</a>
           </p>
         </div>
+
+        <!-- 2) COO -->
         <div class="card">
-          <h3>CTO / Technical leadership</h3>
+          <img class="team-photo" src="assets/team/COO.jpg" alt="COO portrait" loading="lazy" />
+          <h3>Steve Palmer</h3>
+          <div class="team-role">COO</div>
           <p class="meta">
-            <!-- TODO: Fill name, headshot, bio -->
-            Name • short bio • publications / patents
+            <!-- TODO: 1–2 line bio for COO -->
+            Experienced Executive Large-scale project management expertise Formerly BESS Procurement and Partner at ERM.<br/>
+            <!-- TODO: LinkedIn URL -->
+            <a class="team-link" href="https://www.linkedin.com/in/stevenjpalmer/" target="_blank" rel="noopener">LinkedIn</a>
           </p>
         </div>
+
+        <!-- 3) CTO -->
         <div class="card">
-          <h3>Advisors & collaborators</h3>
+          <img class="team-photo" src="assets/team/CTO.jpg" alt="CTO portrait" loading="lazy" />
+          <h3>Dr. Sanoop Kammampata<!-- TODO: CTO Name -->CTO Name</h3>
+          <div class="team-role">CTO</div>
           <p class="meta">
-            <!-- TODO: Fill collaborators (AISEL, industry advisors, etc.) -->
-            Names • roles • affiliations
+            <!-- TODO: 1–2 line bio for CTO -->
+            Postdoctoral Chemist PhD Experienced R&D management with Carbon Upcycling Solid-state battery expert.<br/>
+            <!-- TODO: LinkedIn URL -->
+            <a class="team-link" href="https://www.linkedin.com/in/kammampata/" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+        </div>
+
+        <!-- 4) CSO -->
+        <div class="card">
+          <img class="team-photo" src="assets/team/CSO.jpg" alt="CSO portrait" loading="lazy" />
+          <h3>Dr. Sumaletha Narayanan</h3>
+          <div class="team-role">CSO</div>
+          <p class="meta">
+            <!-- TODO: 1–2 line bio for CSO -->
+            Postdoctoral Chemist PhD Electrolyte Inventor Solid-state battery expert.<br/>
+            <!-- TODO: LinkedIn URL -->
+            <a class="team-link" href="https://www.linkedin.com/in/sumaletha/" target="_blank" rel="noopener">LinkedIn</a>
           </p>
         </div>
       </div>
