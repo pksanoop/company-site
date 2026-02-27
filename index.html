@@ -326,35 +326,7 @@
     .stat .t{ color: rgba(255,255,255,0.72); font-weight: 650; }
 
     /* Tech diagram placeholder */
-    .diagram{
-      border-radius: var(--radius);
-      border: 1px dashed rgba(255,255,255,0.22);
-      background: rgba(255,255,255,0.03);
-      padding: 18px;
-      min-height: 210px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color: rgba(255,255,255,0.60);
-      text-align:center;
-    }
     
-    .diagram svg{ width: 100%; max-width: 560px; height:auto; opacity:0.95; }
-    /* --- How it works image (prevents oversize/stretch) --- */
-    .diagram.diagram-image{
-      border-style: solid;          /* optional: solid border for real images */
-      padding: 12px;                /* smaller padding looks better with images */
-      min-height: unset;            /* overrides the 210px min-height */
-      overflow: hidden;             /* clips to rounded corners */
-    }
-
-    .howitworks-img{
-      width: 100%;
-      height: auto;                 /* no stretching */
-      max-height: 420px;            /* cap so it doesn't become huge */
-      object-fit: contain;          /* fit entire image (no cropping) */
-      display: block;
-    }
     /* --- Technology image sizing (fix oversized image) --- */
     .tech-image-wrap{
       margin-top: 18px;
