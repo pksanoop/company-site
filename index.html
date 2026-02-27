@@ -423,43 +423,63 @@
   <!-- HERO -->
   <header class="hero" id="home">
     <div class="wrap hero-grid">
-      <div class="hero-card pad reveal">
-        <div class="kicker">Powering the energy transition</div>
-        <h1>Safe, high-performance solid-state sodium batteries — built for real-world storage.</h1>
 
-        <p class="lead">
-          Elektra Industries develops sustainable solid-state sodium batteries in collaboration with the
-          Advanced Ionics for Sustainable Energy Lab (AISEL) at the University of Calgary.
-          Our patented approach targets a high-energy-density alternative to traditional lithium batteries
-          with lower cost, improved safety, wider operating temperatures, and stronger environmental outcomes.
-        </p>
+  <!-- VIDEO FIRST (FULL WIDTH) -->
+  <div class="hero-card video reveal" aria-label="Hero video">
+    <div class="video-fallback" aria-hidden="true"></div>
+    <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="./assets/hero-poster.jpg">
+      <source src="./assets/hero.mp4" type="video/mp4" />
+    </video>
 
-        <div class="hero-badges">
-          <div class="badge"><strong>Abundant</strong> sodium-based materials</div>
-          <div class="badge"><strong>Nonflammable</strong> ceramic electrolyte</div>
-          <div class="badge"><strong>Designed for</strong> BESS developers</div>
-          <div class="badge"><strong>Lower-carbon</strong> supply pathway</div>
-        </div>
+    <div class="video-overlay">
+      <div class="title">Elektra Industries</div>
+      <p class="sub">
+        Replace <code>assets/hero.mp4</code> with your lab / cell-testing / renewables footage for a stronger demo.
+      </p>
+    </div>
+  </div>
 
-        <div class="hero-actions">
-          <a class="btn primary" href="#technology">Explore the technology</a>
-          <a class="btn" href="#services">See services & pilots</a>
-          <!-- Optional: link to PDF / deck later -->
-          <!-- <a class="btn" href="assets/elektra-onepager.pdf" target="_blank" rel="noopener">Download one-pager</a> -->
-        </div>
+  <!-- TEXT SECOND (BELOW VIDEO) -->
+  <div class="hero-card pad reveal">
+    <div class="kicker">POWERING THE ENERGY TRANSITION</div>
+    <h1>Safe, high-performance solid-state sodium batteries — built for real-world storage.</h1>
 
-        <hr class="hr" />
+    <p class="lead">
+      Elektra Industries develops sustainable solid-state sodium batteries in collaboration with the
+      Advanced Ionics for Sustainable Energy Lab (AISEL) at the University of Calgary.
+      Our patented approach targets a high-energy-density alternative to traditional lithium batteries
+      with lower cost, improved safety, wider operating temperatures, and stronger environmental outcomes.
+    </p>
 
-        <div class="grid2">
-          <div class="stat">
-            <div class="n">BESS</div>
-            <div class="t">Primary focus: grid storage & renewables integration</div>
-          </div>
-          <div class="stat">
-            <div class="n">SSSB</div>
-            <div class="t">Solid-state sodium architecture with ceramic separator</div>
-          </div>
-        </div>
+    <div class="hero-badges">
+      <div class="badge"><strong>Abundant</strong> sodium-based materials</div>
+      <div class="badge"><strong>Nonflammable</strong> ceramic electrolyte</div>
+      <div class="badge"><strong>Designed for</strong> BESS developers</div>
+      <div class="badge"><strong>Lower-carbon</strong> supply pathway</div>
+    </div>
+
+    <div class="hero-actions">
+      <a class="btn primary" href="#technology">Explore the technology</a>
+      <!-- remove this if you already removed Services -->
+      <!-- <a class="btn" href="#services">See services & pilots</a> -->
+    </div>
+
+    <hr class="hr" />
+
+    <div class="grid2">
+      <div class="stat">
+        <div class="n">BESS</div>
+        <div class="t">Primary focus: grid storage & renewables integration</div>
+      </div>
+      <div class="stat">
+        <div class="n">SSSB</div>
+        <div class="t">Solid-state sodium architecture with ceramic separator</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
 
         <!-- Leave space for later metrics -->
         <p class="meta">
